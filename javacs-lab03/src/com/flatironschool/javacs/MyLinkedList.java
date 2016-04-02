@@ -75,7 +75,6 @@ public class MyLinkedList<E> implements List<E> {
 			head = new Node(element);
 		} else {
 			Node node = head;
-			// loop until the last node
 			for ( ; node.next != null; node = node.next) {}
 			node.next = new Node(element);
 		}
@@ -155,7 +154,7 @@ public class MyLinkedList<E> implements List<E> {
 	public int indexOf(Object target) {
         Node node = head;
         for (int x = 0; x< size; node = node.next, x++){
-            if (node.cargo == target){
+            if (equals(target, node.cargo)){
                 return x;
             }
         }

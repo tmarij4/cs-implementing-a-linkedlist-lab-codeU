@@ -214,7 +214,7 @@ public class MyLinkedListTest {
 		
 		flag = mll.remove(new Integer(3));
 		assertThat(flag, equalTo(true));
-		sassertThat(mll.size(), is(0));
+		assertThat(mll.size(), is(0));
 		//System.out.println(Arrays.toString(mal.toArray()));
 	}
 
